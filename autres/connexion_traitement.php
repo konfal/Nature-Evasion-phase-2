@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die('Erreur : fichier utilisateurs introuvable.');
     }
 } else {
-    // Si accès direct à ce script
+    
     header('Location: ../pages/connexion.php');
     exit();
 }
