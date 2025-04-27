@@ -1,0 +1,92 @@
+[
+  {
+    "destination": "Bali",
+    "description": "Plages paradisiaques et temples magnifiques.",
+    "option": "all_inclusive",
+    "image": "https://c4.wallpaperflare.com/wallpaper/179/915/685/photography-water-reflection-bali-wallpaper-preview.jpg"
+  },
+  {
+    "destination": "Islande",
+    "description": "Aurores boréales et paysages glacés.",
+    "option": "half_board",
+    "image": "https://images8.alphacoders.com/458/thumb-1920-458519.jpg"
+  },
+  {
+    "destination": "Japon",
+    "description": "Tradition et modernité à Tokyo et Kyoto.",
+    "option": "bed_breakfast",
+    "image": "https://wallpapercat.com/w/full/c/8/7/31115-3840x2160-desktop-4k-japan-wallpaper-photo.jpg"
+  },
+  {
+    "destination": "Thaïlande",
+    "description": "Temples dorés et plages paradisiaques.",
+    "option": "all_inclusive",
+    "image": "https://wallpapercat.com/w/full/5/9/9/31410-3840x2160-desktop-4k-thailand-background-photo.jpg"
+  },
+  {
+    "destination": "Grèce",
+    "description": "Îles bleues et blanches sous le soleil.",
+    "option": "half_board",
+    "image": "https://images.pexels.com/photos/164041/pexels-photo-164041.jpeg?cs=srgb&dl=pexels-pixabay-164041.jpg&fm=jpg"
+  },
+  {
+    "destination": "Canada",
+    "description": "Grandes étendues et nature sauvage.",
+    "option": "bed_breakfast",
+    "image": "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg"
+  },
+  {
+    "destination": "Maroc",
+    "description": "Désert et médinas animées.",
+    "option": "all_inclusive",
+    "image": "https://c1.wallpaperflare.com/preview/570/138/559/morocco-oriental-marrakech-orient.jpg"
+  },
+  {
+    "destination": "Australie",
+    "description": "Sur la route entre plages et désert rouge.",
+    "option": "half_board",
+    "image": "https://c4.wallpaperflare.com/wallpaper/136/875/670/5bd32ca961722-wallpaper-preview.jpg"
+  },
+  {
+    "destination": "Norvège",
+    "description": "Fjords majestueux et villages colorés.",
+    "option": "bed_breakfast",
+    "image": "https://wallpapercat.com/w/full/c/8/c/121963-3840x2160-desktop-4k-norway-wallpaper.jpg"
+  },
+  {
+    "destination": "Italie",
+    "description": "Art, gastronomie et dolce vita.",
+    "option": "all_inclusive",
+    "image": "https://c4.wallpaperflare.com/wallpaper/464/820/842/italy-arch-puddle-lombardy-wallpaper-preview.jpg"
+  },
+  {
+    "destination": "Pérou",
+    "description": "Machu Picchu et montagnes sacrées.",
+    "option": "half_board",
+    "image": "https://images.pexels.com/photos/3463964/pexels-photo-3463964.jpeg?cs=srgb&dl=pexels-sparks-darby-1868885-3463964.jpg&fm=jpg"
+  },
+  {
+    "destination": "Portugal",
+    "description": "Villages typiques et plages dorées.",
+    "option": "bed_breakfast",
+    "image": "https://stories.weroad.fr/wp-content/uploads/2023/10/Que-voir-au-Portugal.jpg"
+  },
+  {
+    "destination": "Espagne",
+    "description": "Fêtes, plages et tapas à volonté.",
+    "option": "all_inclusive",
+    "image": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhaW58ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    "destination": "Suisse",
+    "description": "Montagnes, lacs et chocolats exquis.",
+    "option": "half_board",
+    "image": "https://media.istockphoto.com/id/2170513488/photo/scenic-view-of-berns-charming-rooftops-and-hillside-homes-under-a-cloudy-sky.jpg?s=612x612&w=0&k=20&c=furmnnndbn_sf9OOKKDAnM6TxHNeXv7TPqrg3lQ6rpY="
+  },
+  {
+    "destination": "Indonésie",
+    "description": "Îles mystérieuses et rizières verdoyantes.",
+    "option": "bed_breakfast",
+    "image": "https://wallpapers.com/images/featured/indonesia-6f8vmgeiaqampbht.jpg"
+  }
+]
