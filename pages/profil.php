@@ -1,13 +1,11 @@
 <?php
-session_start();
+include('../includes/header.php');
 
 // Vérifier si l'utilisateur est connecté
-if (!isset($_SESSION['user'])) {
+if (!isset($_SESSION['utilisateur'])) {
     header('Location: connexion.php');
     exit();
 }
-
-include('../includes/header.php');
 ?>
 
 <main>
@@ -20,11 +18,11 @@ include('../includes/header.php');
         <div class="profile-info">
             <div class="info-item">
                 <label>Nom :</label>
-                <input type="text" value="<?php echo htmlspecialchars($_SESSION['user']['name'] ?? 'Non renseigné'); ?>" readonly>
+                <input type="text" value="<?php echo htmlspecialchars($_SESSION['utilisateur']['name'] ?? 'Non renseigné'); ?>" readonly>
             </div>
             <div class="info-item">
                 <label>Email :</label>
-                <input type="email" value="<?php echo htmlspecialchars($_SESSION['user']['email'] ?? 'Non renseigné'); ?>" readonly>
+                <input type="email" value="<?php echo htmlspecialchars($_SESSION['utilisateur']['email'] ?? 'Non renseigné'); ?>" readonly>
             </div>
             <div class="info-item">
                 <label>Mot de passe :</label>
@@ -32,11 +30,11 @@ include('../includes/header.php');
             </div>
             <div class="info-item">
                 <label>Téléphone :</label>
-                <input type="text" value="<?php echo htmlspecialchars($_SESSION['user']['telephone'] ?? 'Non renseigné'); ?>" readonly>
+                <input type="text" value="<?php echo htmlspecialchars($_SESSION['utilisateur']['telephone'] ?? 'Non renseigné'); ?>" readonly>
             </div>
             <div class="info-item">
                 <label>Adresse :</label>
-                <input type="text" value="<?php echo htmlspecialchars($_SESSION['user']['adresse'] ?? 'Non renseignée'); ?>" readonly>
+                <input type="text" value="<?php echo htmlspecialchars($_SESSION['utilisateur']['adresse'] ?? 'Non renseignée'); ?>" readonly>
             </div>
         </div>
 
@@ -47,7 +45,7 @@ include('../includes/header.php');
             $reservationsFile = '../data/reservations.json';
             if (file_exists($reservationsFile)) {
                 $reservations = json_decode(file_get_contents($reservationsFile), true);
-                $userEmail = $_SESSION['user']['email'] ?? '';
+                $userEmail = $_SESSION['utilisateur']['email'] ?? '';
                 $found = false;
 
                 echo '<ul style="list-style: none; padding: 0;">';
