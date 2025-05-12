@@ -1,6 +1,9 @@
 <?php
 session_start();
 
+// Pour déboguer temporairement une boucle de redirection
+// session_destroy();
+
 // Vérification que le formulaire est soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = htmlspecialchars($_POST['email']);
@@ -14,8 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         foreach ($utilisateurs as $utilisateur) {
             if ($utilisateur['email'] === $email) {
                 if (password_verify($password, $utilisateur['password'])) {
-                    // Authentification réussie
-                    $_SESSION['utilisateur'] = $utilisateur;
+                    // Authentification réussie : on garde seulement les infos nécessaires
+                    $_SESSION['utilisateur'] = [
+                        'email' => $utilisateur['email'],
+                        'name' => $utilisateur['name'] ?? 'Non renseigné',
+                        'role' => $utilisateur['role'] ?? 'client'
+                    ];
+                    
                     header('Location: ../pages/profil.php');
                     exit();
                 } else {
@@ -32,8 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die('Erreur : fichier utilisateurs introuvable.');
     }
 } else {
-    
+    // Accès direct interdit
     header('Location: ../pages/connexion.php');
     exit();
 }
-?>
