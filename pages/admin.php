@@ -1,14 +1,13 @@
 <?php 
 include('../includes/header.php'); 
-session_start();
 
-// Sécuriser la page : uniquement les administrateurs peuvent accéder
-if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'admin') {
+// Vérifie si l'utilisateur est connecté et s'il est admin
+if (!isset($_SESSION['utilisateur']) || $_SESSION['utilisateur']['role'] !== 'admin') {
     header('Location: connexion.php');
     exit;
 }
 
-// Charger les utilisateurs
+// Charger les utilisateurs depuis le fichier JSON
 $utilisateurs = json_decode(file_get_contents('../data/utilisateurs.json'), true);
 ?>
 
@@ -29,10 +28,10 @@ $utilisateurs = json_decode(file_get_contents('../data/utilisateurs.json'), true
                         <button class="vip-button">Retirer VIP</button>
                     <?php endif; ?>
 
-                    <?php if (!$user['banned']): ?>
-                        <button class="ban-button">Bannir</button>
-                    <?php else: ?>
+                    <?php if (isset($user['banned']) && $user['banned']): ?>
                         <button class="ban-button">Débannir</button>
+                    <?php else: ?>
+                        <button class="ban-button">Bannir</button>
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>
